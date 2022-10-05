@@ -26,6 +26,6 @@ public class TestController : ControllerBase
     {
         await Task.CompletedTask;
         _logger.LogInformation("Post");
-        return Ok((Request.Headers, Request.Body));
+        return Ok(Request.Headers);
     }
 }
